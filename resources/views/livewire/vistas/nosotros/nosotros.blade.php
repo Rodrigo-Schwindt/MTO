@@ -280,9 +280,8 @@
 
         .about-card {
             grid-column: span 2;
-            min-height: 380px;
             background: #fff;
-            padding: 58px 36px 32px;
+            padding: 40px 36px 28px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -313,7 +312,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 34px;
+            margin-bottom: 24px;
         }
 
         .about-card-icon img {
@@ -323,7 +322,7 @@
         }
 
         .about-card h3 {
-            margin: 0 0 28px;
+            margin: 0 0 16px;
             color: #353C47;
             font-size: 18px;
             font-weight: 800;
@@ -391,7 +390,7 @@
             }
 
             .about-card {
-                padding: 44px 28px 28px;
+                padding: 32px 28px 24px;
             }
         }
 

@@ -356,10 +356,10 @@
                 <nav class="hidden lg:flex items-center">
                     <div class="flex items-center gap-[16px]">
                         <a wire:navigate href="/nosotros" class="nav-link {{ request()->is('nosotros') ? 'active' : '' }} text-[14px] font-normal leading-normal">Nosotros</a>
-                        <a wire:navigate href="/productos" class="nav-link {{ request()->is('productos*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Equipamiento</a>
-                        <a wire:navigate href="/servicios" class="nav-link {{ request()->is('servicios*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Servicios</a>
                         <a wire:navigate href="/sectores" class="nav-link {{ request()->is('sectores*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Sectores</a>
+                        <a wire:navigate href="/servicios" class="nav-link {{ request()->is('servicios*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Servicios</a>
                         <a wire:navigate href="/proyectos" class="nav-link {{ request()->is('proyectos*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Proyectos</a>
+                        <a wire:navigate href="/productos" class="nav-link {{ request()->is('productos*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Equipamiento</a>
                         <a wire:navigate href="/calidad" class="nav-link {{ request()->is('calidad*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Calidad</a>
                         <a wire:navigate href="/clientes" class="nav-link {{ request()->is('clientes*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Clientes</a>
                         <a wire:navigate href="/novedades" class="nav-link {{ request()->is('novedades*') ? 'active' : '' }} text-[14px] font-normal leading-normal">Novedades</a>
@@ -416,21 +416,21 @@
            class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('nosotros') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
             Nosotros @if(request()->is('nosotros'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
         </a>
-        <a wire:navigate href="/productos" @click="open = false"
-           class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('productos*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
-            Equipamiento @if(request()->is('productos*'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
+        <a wire:navigate href="/sectores" @click="open = false"
+           class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('sectores*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
+            Sectores @if(request()->is('sectores*'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
         </a>
         <a wire:navigate href="/servicios" @click="open = false"
            class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('servicios*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
             Servicios @if(request()->is('servicios*'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
         </a>
-        <a wire:navigate href="/sectores" @click="open = false"
-           class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('sectores*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
-            Sectores @if(request()->is('sectores*'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
-        </a>
         <a wire:navigate href="/proyectos" @click="open = false"
            class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('proyectos*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
             Proyectos @if(request()->is('proyectos*'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
+        </a>
+        <a wire:navigate href="/productos" @click="open = false"
+           class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('productos*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
+            Equipamiento @if(request()->is('productos*'))<span class="w-1.5 h-1.5 rounded-full bg-[#52A028] flex-shrink-0"></span>@endif
         </a>
         <a wire:navigate href="/calidad" @click="open = false"
            class="flex items-center justify-between px-5 py-4 text-[15px] transition-colors {{ request()->is('calidad*') ? 'text-[#52A028] font-semibold' : 'text-[#404041] hover:text-[#52A028]' }}">
